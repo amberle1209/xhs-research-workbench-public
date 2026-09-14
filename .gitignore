@@ -1,0 +1,22 @@
+.venv/
+.local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.superpowers/sdd/
+.worktrees/
+*.db
+*.sqlite*
+data/
+media/
+reports/
+logs/
+cookies*.json
+session*
+.env*
+
+# Local release bundles and macOS metadata
+/dist/
+.DS_Store

@@ -1,0 +1,63 @@
+[
+  {
+    "protocol_version": "1.0",
+    "kind": "begin_job",
+    "job_id": "acceptance_current",
+    "collection_surface": "extension_current",
+    "source_page_url": "https://www.xiaohongshu.com/explore/current_note",
+    "requested_count": 1,
+    "candidate_scan_limit": 1,
+    "selection_order": "exact_likes_desc"
+  },
+  {
+    "protocol_version": "1.0",
+    "kind": "candidate_snapshot",
+    "job_id": "acceptance_current",
+    "source_position": 1,
+    "note_id": "current_note",
+    "canonical_url": "https://www.xiaohongshu.com/explore/current_note",
+    "title": "当前帖子",
+    "author_id": "author_current",
+    "author_name": "当前作者",
+    "author_profile_url": "https://www.xiaohongshu.com/user/profile/author_current",
+    "metrics": {
+      "likes": {"raw_value": "7", "normalized_value": 7, "precision": "exact"}
+    },
+    "metric_provenance": {"likes": "detail_visible_count"},
+    "media_slots": [{"note_id": "current_note", "role": "image", "position": 1}]
+  },
+  {"protocol_version": "1.0", "kind": "finish_scan", "job_id": "acceptance_current"},
+  {
+    "protocol_version": "1.0",
+    "kind": "media_begin",
+    "job_id": "acceptance_current",
+    "note_id": "current_note",
+    "role": "image",
+    "position": 1,
+    "sequence": 1,
+    "size_limit_bytes": 15728640
+  },
+  {
+    "protocol_version": "1.0",
+    "kind": "media_chunk",
+    "job_id": "acceptance_current",
+    "note_id": "current_note",
+    "role": "image",
+    "position": 1,
+    "sequence": 1,
+    "chunk_index": 0,
+    "data_base64": "/9j/Zml4dHVyZS1pbWFnZQ=="
+  },
+  {
+    "protocol_version": "1.0",
+    "kind": "media_end",
+    "job_id": "acceptance_current",
+    "note_id": "current_note",
+    "role": "image",
+    "position": 1,
+    "sequence": 1,
+    "mime_type": "image/jpeg",
+    "sha256": "f26b33c2b0294d41989d6653fd81181b689b549e4c7473ca31f65db738e72c1e"
+  },
+  {"protocol_version": "1.0", "kind": "finish_job", "job_id": "acceptance_current"}
+]

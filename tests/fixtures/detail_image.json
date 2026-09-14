@@ -1,0 +1,17 @@
+{
+  "note": {
+    "noteId": "note_image",
+    "title": "Image fixture",
+    "desc": "Fixture body",
+    "type": "normal",
+    "tagList": [{"name": "AI"}],
+    "user": {"userId": "author_a", "nickname": "Fixture author"},
+    "interactInfo": {
+      "likedCount": "12",
+      "collectedCount": "3",
+      "commentCount": "1",
+      "shareCount": "0"
+    },
+    "imageList": [{"url": "https://example.invalid/cover.jpg"}]
+  }
+}

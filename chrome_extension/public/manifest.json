@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "XHS Research Workbench",
+  "version": "0.1.13",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtMFdhrsEGRrab19SMmnNgO0VTHqx/tDssutJ+TwmJwl0NUOhZDWSCwbQ2Kwp1+rvuRsKG8tpNuYrCNxWbVEDy4+09mmSQXprrp9/Ss1ROv1H3bKHqtqJm9dQ2XXsehhXRPnP/3+PDl2FVuZuTSIi749qdnxgfhON4f3e2T1CB1WP1V7G+tTIQrY8GvAR7RaOmGQSHj28RSVDsmMv+hIeWmZPRJeRrzNzjJyXsQg6GXXcaTq89lgp/RiQpyCyZ4qy7u0AtLXn3W1hZuz6RHSTnJjPf24CO68iEpCJ2RedPs7EoA6KJDxsMmJqCRSTCfFUw2GrDQgau/PQV0UMt367fwIDAQAB",
+  "background": { "service_worker": "service-worker.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "小红书研究采集" }
+}

@@ -1,0 +1,10 @@
+{
+  "userPageData": {
+    "basicInfo": {
+      "userId": "author_a",
+      "nickname": "Fixture author",
+      "desc": "Fixture bio"
+    }
+  },
+  "userInfo": {"userId": "author_a"}
+}

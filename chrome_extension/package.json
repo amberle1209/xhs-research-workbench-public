@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^24.15.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify:acceptance-traces": "vitest run --run tests/acceptance-traces.test.ts",
+    "build": "node esbuild.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.2.7",
+    "esbuild": "0.28.2",
+    "jsdom": "30.0.1",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  }
+}

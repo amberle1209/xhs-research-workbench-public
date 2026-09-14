@@ -1,0 +1,28 @@
+[
+  {
+    "protocol_version": "1.0",
+    "kind": "begin_job",
+    "job_id": "acceptance_batch",
+    "collection_surface": "extension_search",
+    "source_page_url": "https://www.xiaohongshu.com/search_result",
+    "requested_count": 5,
+    "candidate_scan_limit": 10,
+    "publication_cutoff": "2026-03-01T12:00:00+08:00",
+    "selection_order": "exact_likes_desc"
+  },
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":1,"note_id":"note_01","canonical_url":"https://www.xiaohongshu.com/explore/note_01","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"published","raw_text":"发布于 2026-03-02 12:00"},"metrics":{"likes":{"raw_value":"1万+","normalized_value":10000,"precision":"display_rounded"}}},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":2,"note_id":"note_02","canonical_url":"https://www.xiaohongshu.com/explore/note_02","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"published","raw_text":"发布于 2026-03-02 12:00"},"metrics":{}},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":3,"note_id":"note_03","canonical_url":"https://www.xiaohongshu.com/explore/note_03","published_at":null,"time_evidence":{"kind":"unknown","raw_text":"3天前"},"metrics":{"likes":{"raw_value":"100","normalized_value":100,"precision":"exact"}}},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":4,"note_id":"note_04","canonical_url":"https://www.xiaohongshu.com/explore/note_04","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"edited","raw_text":"编辑于 2026-03-02 12:00"},"metrics":{"likes":{"raw_value":"90","normalized_value":90,"precision":"exact"}}},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":5,"note_id":"note_05","canonical_url":"https://www.xiaohongshu.com/explore/note_05","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"published","raw_text":"发布于 2026-03-02 12:00"},"metrics":{"likes":{"raw_value":"9万","normalized_value":90000,"precision":"display_rounded"}}},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":6,"note_id":"note_06","canonical_url":"https://www.xiaohongshu.com/explore/note_06","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"published","raw_text":"发布于 2026-03-02 12:00"},"metrics":{"likes":{"raw_value":"50","normalized_value":50,"precision":"exact"}},"media_slots":[{"note_id":"note_06","role":"image","position":1}]},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":7,"note_id":"note_07","canonical_url":"https://www.xiaohongshu.com/explore/note_07","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"published","raw_text":"发布于 2026-03-02 12:00"},"metrics":{"likes":{"raw_value":"20","normalized_value":20,"precision":"exact"}},"media_slots":[]},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":8,"note_id":"note_08","canonical_url":"https://www.xiaohongshu.com/explore/note_08","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"published","raw_text":"发布于 2026-03-02 12:00"},"metrics":{"likes":{"raw_value":"30","normalized_value":30,"precision":"exact"}},"media_slots":[]},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":9,"note_id":"note_09","canonical_url":"https://www.xiaohongshu.com/explore/note_09","published_at":"2026-03-02T12:00:00+08:00","time_evidence":{"kind":"published","raw_text":"发布于 2026-03-02 12:00"},"metrics":{}},
+  {"protocol_version":"1.0","kind":"candidate_snapshot","job_id":"acceptance_batch","source_position":10,"note_id":"note_10","canonical_url":"https://www.xiaohongshu.com/explore/note_10","published_at":null,"time_evidence":{"kind":"unknown","raw_text":"刚刚"},"metrics":{"likes":{"raw_value":"60","normalized_value":60,"precision":"exact"}}},
+  {"protocol_version":"1.0","kind":"finish_scan","job_id":"acceptance_batch"},
+  {"protocol_version":"1.0","kind":"media_begin","job_id":"acceptance_batch","note_id":"note_06","role":"image","position":1,"sequence":1,"size_limit_bytes":15728640},
+  {"protocol_version":"1.0","kind":"media_chunk","job_id":"acceptance_batch","note_id":"note_06","role":"image","position":1,"sequence":1,"chunk_index":0,"data_base64":"/9j/Zml4dHVyZS1pbWFnZQ=="},
+  {"protocol_version":"1.0","kind":"media_end","job_id":"acceptance_batch","note_id":"note_06","role":"image","position":1,"sequence":1,"mime_type":"image/jpeg","sha256":"f26b33c2b0294d41989d6653fd81181b689b549e4c7473ca31f65db738e72c1e"},
+  {"protocol_version":"1.0","kind":"finish_job","job_id":"acceptance_batch"}
+]

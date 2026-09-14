@@ -1,0 +1,20 @@
+{
+  "userPageData": {
+    "basicInfo": {
+      "userId": "author_a",
+      "nickname": "Metric fixture author",
+      "desc": "Metric fixture bio",
+      "noteCount": "999",
+      "followerCount": "888"
+    },
+    "interactions": [
+      {"name": "fans", "count": "12,345"},
+      {"type": "笔记", "value": "7"},
+      {"name": "interaction", "count": "1.2万"},
+      {"name": "获赞与收藏", "count": "2.3万"}
+    ]
+  },
+  "interactions": [
+    {"name": "fans", "count": "1"}
+  ]
+}

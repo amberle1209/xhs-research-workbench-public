@@ -1,0 +1,22 @@
+{
+  "media_scope_valid": true,
+  "media_discovered_count": 0,
+  "note": {
+    "note_id": "note_video",
+    "title": "Video fixture",
+    "desc": "Second body",
+    "type": "video",
+    "user": {"user_id": "author_b", "nick_name": "Second author"},
+    "interact_info": {
+      "liked_count": "8",
+      "collected_count": "2",
+      "comment_count": "0",
+      "share_count": "1"
+    },
+    "video": {
+      "poster": "https://sns-webpic-qc.xhscdn.com/poster.jpg",
+      "url": "https://sns-video-qc.xhscdn.com/video.mp4",
+      "duration_ms": 12345
+    }
+  }
+}

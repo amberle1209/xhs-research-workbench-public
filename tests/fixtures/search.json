@@ -1,0 +1,20 @@
+{
+  "search_feed": [
+    {
+      "id": "note_image",
+      "note_card": {
+        "display_title": "Image fixture",
+        "user": {"userId": "author_a", "nickname": "Fixture author"},
+        "interact_info": {"liked_count": "12"}
+      }
+    },
+    {
+      "noteId": "note_video",
+      "noteCard": {
+        "displayTitle": "Video fixture",
+        "user": {"user_id": "author_b", "nick_name": "Second author"},
+        "interactInfo": {"likedCount": "8"}
+      }
+    }
+  ]
+}

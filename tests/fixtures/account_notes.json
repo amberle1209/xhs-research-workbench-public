@@ -1,0 +1,12 @@
+{
+  "user_posts": [
+    {
+      "noteId": "note_image",
+      "noteCard": {"displayTitle": "Image fixture"}
+    },
+    {
+      "note_id": "note_video",
+      "note_card": {"display_title": "Video fixture"}
+    }
+  ]
+}

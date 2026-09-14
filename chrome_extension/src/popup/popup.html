@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>小红书研究采集</title><link rel="stylesheet" href="popup.css"></head>
+  <body>
+    <main class="popup-shell" aria-labelledby="popup-title">
+      <header class="masthead"><p class="eyebrow">研究采集 <span aria-hidden="true">/</span> XHS</p><div class="heading-row"><h1 id="popup-title">小红书研究采集</h1><span class="accent-mark" aria-label="仅手动采集">采集</span></div><p class="lede">仅在你主动开始后，整理当前页面可见的研究资料。</p></header>
+      <section class="status-band" aria-labelledby="status-title"><h2 id="status-title" class="visually-hidden">当前状态</h2><p id="status" role="status" aria-live="polite">正在识别当前页面。</p></section>
+      <section id="collection-options" class="collection-options" aria-labelledby="options-title" hidden>
+        <div class="section-heading"><h2 id="options-title">搜索结果采集范围</h2><p id="order">将按当前小红书页面的展示顺序采集；若你已调整排序，插件会保留当前结果顺序。</p></div>
+        <label for="requested-count">采集数量<select id="requested-count" name="requested-count" aria-describedby="risk-note"><option value="5">5 篇</option><option value="10">10 篇</option></select></label>
+        <p id="risk-note" class="risk-note">批量采集会依次打开帖子详情；一次最多 10 篇，并限制访问频率。</p>
+      </section>
+      <dl id="progress-counts" class="progress-counts" aria-label="采集进度" hidden><div><dt>已发现</dt><dd id="count-discovered">0</dd></div><div><dt id="count-inspected-label">已完成详情</dt><dd id="count-inspected">0</dd></div><div><dt>符合条件</dt><dd id="count-eligible">0</dd></div><div><dt>已选择</dt><dd id="count-selected">0</dd></div><div><dt>已整理</dt><dd id="count-saved">0</dd></div></dl>
+      <p id="current-candidate" class="candidate-position" hidden></p><p id="report-identifier" class="report-identifier" hidden></p>
+      <section class="permission-note" aria-label="权限说明"><p id="permission-copy">正在识别当前页面；尚不会请求额外权限。</p><p id="build-revision" class="build-revision">构建版本：未识别</p></section>
+      <footer class="actions" aria-label="采集操作"><button id="current-action" class="action-primary" type="button" hidden disabled>提取当前帖子</button><button id="batch-action" class="action-primary" type="button" hidden disabled>按当前页面顺序采集</button><button id="stop-action" class="action-quiet" type="button" hidden>停止采集</button><button id="report-action" class="action-quiet" type="button" hidden>打开本地报告</button></footer>
+    </main><script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xhs-research-workbench"
+version = "0.1.13"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "click>=8.1,<9",
+  "pydantic>=2.11,<3",
+]
+
+[project.optional-dependencies]
+video = ["faster-whisper==1.2.1"]
+upstream = [
+  "xhs-cli @ git+https://github.com/jackwener/xhs-cli.git@3ce71415dc0816ebb4c3f547baf6c08fb3d5cb5a",
+]
+
+[dependency-groups]
+dev = [
+  "hatchling>=1.27,<2",
+  "mypy>=1.17,<2",
+  "pytest>=8.4,<9",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+xhs-workbench = "xhs_workbench.cli:cli"
+xhs-workbench-native = "xhs_workbench.native_host:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: requires a valid local Xiaohongshu session"]
+addopts = "-m 'not live'"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+
+[tool.hatch.build.targets.wheel]
+only-include = [
+  "src/xhs_workbench/__init__.py",
+  "src/xhs_workbench/cli.py",
+  "src/xhs_workbench/collector.py",
+  "src/xhs_workbench/extension_install.py",
+  "src/xhs_workbench/extension_identity.py",
+  "src/xhs_workbench/extension_import.py",
+  "src/xhs_workbench/extension_models.py",
+  "src/xhs_workbench/isolated_login.py",
+  "src/xhs_workbench/media.py",
+  "src/xhs_workbench/models.py",
+  "src/xhs_workbench/native_host.py",
+  "src/xhs_workbench/native_protocol.py",
+  "src/xhs_workbench/path_security.py",
+  "src/xhs_workbench/persistent_client.py",
+  "src/xhs_workbench/pinned_https.py",
+  "src/xhs_workbench/renderer.py",
+  "src/xhs_workbench/video_asr.py",
+  "src/xhs_workbench/video_asr_guard.py",
+  "src/xhs_workbench/video_processing.py",
+  "src/xhs_workbench/security.py",
+  "src/xhs_workbench/xhs_adapter.py",
+  "src/xhs_workbench/xhs_bridge.py",
+  "src/xhs_workbench/extension_bundle",
+]
+sources = ["src"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src/xhs_workbench/__init__.py",
+  "/src/xhs_workbench/cli.py",
+  "/src/xhs_workbench/collector.py",
+  "/src/xhs_workbench/extension_install.py",
+  "/src/xhs_workbench/extension_identity.py",
+  "/src/xhs_workbench/extension_import.py",
+  "/src/xhs_workbench/extension_models.py",
+  "/src/xhs_workbench/isolated_login.py",
+  "/src/xhs_workbench/media.py",
+  "/src/xhs_workbench/models.py",
+  "/src/xhs_workbench/native_host.py",
+  "/src/xhs_workbench/native_protocol.py",
+  "/src/xhs_workbench/path_security.py",
+  "/src/xhs_workbench/persistent_client.py",
+  "/src/xhs_workbench/pinned_https.py",
+  "/src/xhs_workbench/renderer.py",
+  "/src/xhs_workbench/video_asr.py",
+  "/src/xhs_workbench/video_asr_guard.py",
+  "/src/xhs_workbench/video_processing.py",
+  "/src/xhs_workbench/security.py",
+  "/src/xhs_workbench/xhs_adapter.py",
+  "/src/xhs_workbench/xhs_bridge.py",
+  "/src/xhs_workbench/extension_bundle/**",
+  "/README.md",
+  "/DEVELOPMENT.md",
+  "/THIRD_PARTY_NOTICES.md",
+  "/pyproject.toml",
+]
+exclude = [
+  "/tests/**",
+  "/.superpowers/**",
+  "/.codex-quality/**",
+  "/.pytest_cache/**",
+  "/.mypy_cache/**",
+  "/.ruff_cache/**",
+  "/dist/**",
+  "/chrome_extension/**",
+  "/node_modules/**",
+  "/**/node_modules/**",
+  "/**/.cache/**",
+  "/**/*.pem",
+  "/**/*.key",
+  "/**/*.p8",
+  "/**/*.p12",
+  "/**/*private*",
+  "/src/xhs_workbench/**/*.sqlite*",
+  "/src/xhs_workbench/**/.DS_Store",
+  "/src/xhs_workbench/**/*.cache",
+  "/src/xhs_workbench/**/*.log",
+  "/.DS_Store",
+  "/uv.lock",
+]
+
+[tool.hatch.build]
+exclude = [
+  "chrome_extension/node_modules/**",
+  "chrome_extension/tests/**",
+  "chrome_extension/.cache/**",
+  "chrome_extension/dist/**",
+  "src/xhs_workbench/**/*.sqlite*",
+  "src/xhs_workbench/**/.DS_Store",
+  "src/xhs_workbench/**/*.cache",
+  "src/xhs_workbench/**/*.log",
+  "src/xhs_workbench/**/*.pem",
+  "src/xhs_workbench/**/*.key",
+  "src/xhs_workbench/**/*private*",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true

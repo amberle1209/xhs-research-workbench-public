@@ -1,0 +1,14 @@
+{
+  "required_permissions": ["activeTab", "scripting", "storage", "nativeMessaging"],
+  "optional_host_permissions": ["https://www.xiaohongshu.com/*", "https://*.xhscdn.com/*"],
+  "forbidden_api_patterns": [
+    "chrome.cookies",
+    "chrome.debugger",
+    "chrome.history",
+    "chrome.webRequest",
+    "chrome.declarativeNetRequest",
+    "chrome.downloads",
+    "localStorage"
+  ],
+  "forbidden_bundle_markers": ["eval(", "sourceMappingURL", "Safe Storage", "-----BEGIN"]
+}
